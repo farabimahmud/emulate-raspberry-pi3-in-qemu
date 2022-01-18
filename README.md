@@ -47,12 +47,14 @@ $ source ~/.bashrc
 
 # Download Required Files:
 For the next step you need to download the kernel, dtb and disk image and save them to any folder. You would also need to download the launch script. 
-1. Launch Script (launch.sh): [launch.sh](launch.sh) 
-2. Kernel (kernel8.img) https://drive.google.com/file/d/1cQSXOX0DvSVAGbjZGK88-Bm2IQy51twd/view?usp=sharing
-3. DTB (bcm2710-rpi-3-b-plus.dtb) https://drive.google.com/file/d/1FMQDw6hAToIOLbCpuFaqTBpDKTJqGdbP/view?usp=sharing
-4. Disk Image (disk.img): You can use download either the .xz format or the .img format directly
-    a. Archive .xz format (~833MB) need to decompress using ($ tar xvJf disk.xz)  https://drive.google.com/file/d/19rMQRcKmV8g-wfR1IOHp4uLPXYmExoCx/view?usp=sharing
-    b. Decompressed .img format (~4G) https://drive.google.com/file/d/19cPWTYIuFTxdRxrnRhw2qMevb4umpK_H/view?usp=sharing
+1. Launch Script: [launch.sh](launch.sh) 
+2. Kernel: [kernel8.img](kernel8.img)
+3. DTB: [bcm2710-rpi-3-b-plus.dtb](bcm2710-rpi-3-b-plus.dtb)
+4. Disk Image (disk.img): You can use download either the .xz format or the .img format directly -
+    
+    a. Archive .xz format (~833MB) need to decompress using ($ tar xvJf disk.xz)  [disk.xz](https://drive.google.com/file/d/19rMQRcKmV8g-wfR1IOHp4uLPXYmExoCx/view?usp=sharing)
+
+    b. Decompressed .img format (~4G) [disk.img](https://drive.google.com/file/d/19cPWTYIuFTxdRxrnRhw2qMevb4umpK_H/view?usp=sharing)
 
 # Execute Launch Script:
 Once you are done downloading, put all the files in the same directory and you should be able to execute the ```launch.sh``` without any trouble. When prompted, the id and the password for default account -  
