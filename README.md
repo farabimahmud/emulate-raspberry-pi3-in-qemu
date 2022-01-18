@@ -12,7 +12,7 @@ $ sudo apt-get autoremove qemu*
 $ wget https://download.qemu.org/qemu-6.2.0.tar.xz
 ```
 
-3. Uncompress the source code for QEMU 6.2
+3. Decompress the source code for QEMU 6.2
 ```
 $ tar xvJf qemu-6.2.0.tar.xz
 ```
@@ -55,9 +55,9 @@ For the next step you need to download the kernel, dtb and disk image and save t
 3. DTB: [bcm2710-rpi-3-b-plus.dtb](bcm2710-rpi-3-b-plus.dtb)
 4. Disk Image (disk.img): You can use download either the .xz format or the .img format directly -
     
-    a. Archive .xz format (~833MB) need to decompress using ($ tar xvJf disk.xz)  [disk.xz](https://drive.google.com/file/d/19rMQRcKmV8g-wfR1IOHp4uLPXYmExoCx/view?usp=sharing)
+    a. [disk.xz](https://drive.google.com/file/d/19rMQRcKmV8g-wfR1IOHp4uLPXYmExoCx/view?usp=sharing) Archive .xz format (~833MB) need to decompress using (``` $ tar xvJf disk.xz ```)  
 
-    b. Decompressed .img format (~4G) [disk.img](https://drive.google.com/file/d/19cPWTYIuFTxdRxrnRhw2qMevb4umpK_H/view?usp=sharing)
+    b. [disk.img](https://drive.google.com/file/d/19cPWTYIuFTxdRxrnRhw2qMevb4umpK_H/view?usp=sharing) Decompressed .img format (~4G) 
 
 ## Execute Launch Script:
 Once you are done downloading, put all the files in the same directory and you should be able to execute the ```launch.sh``` without any trouble. When prompted, the id and the password for default account -  
