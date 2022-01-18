@@ -1,4 +1,7 @@
-# Install QEMU 6.2 from source:
+# Emulate Raspberry Pi 3 using QEMU in 64 bit 
+In this tutorial we will see how we can emulate Raspberry Pi 3 b Plus using QEMU in linux environment. I have tried to piece together information from different repositories and assemble them together so it works right out of the box. Hope it helps. 
+
+## Install QEMU 6.2 from source:
 1. Make sure you do not have QEMU preinstalled. Remove the existing installation if needed by executing the following - 
 ```
 $ sudo apt-get autoremove qemu*
@@ -45,7 +48,7 @@ Change ```<path-to-qemu-6.2.0/build>``` to appropriate value
 $ source ~/.bashrc
 ```
 
-# Download Required Files:
+## Download Required Files:
 For the next step you need to download the kernel, dtb and disk image and save them to any folder. You would also need to download the launch script. 
 1. Launch Script: [launch.sh](launch.sh) 
 2. Kernel: [kernel8.img](kernel8.img)
@@ -56,7 +59,7 @@ For the next step you need to download the kernel, dtb and disk image and save t
 
     b. Decompressed .img format (~4G) [disk.img](https://drive.google.com/file/d/19cPWTYIuFTxdRxrnRhw2qMevb4umpK_H/view?usp=sharing)
 
-# Execute Launch Script:
+## Execute Launch Script:
 Once you are done downloading, put all the files in the same directory and you should be able to execute the ```launch.sh``` without any trouble. When prompted, the id and the password for default account -  
 
 **Username:** pi <br>
@@ -64,7 +67,7 @@ Once you are done downloading, put all the files in the same directory and you s
 
 If you did this successfully you should be able to see this - 
 ![Success!](success.png "Success")
-# References:
+## References:
 These are the references used for executing the script. However, you might need to modify the files directly obtained from these sources. 
 - Kernel: https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/native-emulation/5.4.51%20kernels/kernel8.img
 - DTB: https://github.com/dhruvvyas90/qemu-rpi-kernel/blob/master/native-emulation/dtbs/bcm2710-rpi-3-b-plus.dtb
